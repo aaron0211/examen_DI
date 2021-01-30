@@ -15,10 +15,10 @@ $sesion = new Sesion();
     echo "<p><a href='index.php'>Volver al inicio</a> </p><br><br>";
     echo "<h1 align='center'>Ticket de Compra</h1>";
     try {
-        $stmt = $dbh->prepare('select * from productos');
-        $stmt->execute();
-
-        $resultado = $stmt->fetchAll(PDO::FETCH_ASSOC);
+//        $stmt = $dbh->prepare('select * from productos');
+//        $stmt->execute();
+//
+//        $resultado = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         echo "<table border='0' cellpaddiing='10' align='center'>";
         echo "<tr> <td colspan='4' align='center'>TICKET EXAMEN</td></tr>";

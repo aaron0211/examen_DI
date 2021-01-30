@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd7d04ff-3c66-4dd6-914d-31d9909a0619" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/vistaCategorias.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistaCategorias.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket.php" beforeDir="false" afterPath="$PROJECT_DIR$/ticket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ventas.php" beforeDir="false" afterPath="$PROJECT_DIR$/ventas.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +17,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="localhost" id="bc209cd0-f705-4820-806e-91d4d6dbb6fc" name="Server" />
@@ -28,6 +31,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -54,7 +58,8 @@
       <option name="presentableId" value="Default" />
       <updated>1611844999508</updated>
       <workItem from="1611845001488" duration="13360000" />
-      <workItem from="1611905669803" duration="28831000" />
+      <workItem from="1611905669803" duration="29131000" />
+      <workItem from="1612034207241" duration="1375000" />
     </task>
     <servers />
   </component>
@@ -71,6 +76,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -84,6 +90,16 @@
           <url>file://$PROJECT_DIR$/editarEmpleados.php</url>
           <line>61</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/ticket.php</url>
+          <line>33</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/ventas.php</url>
+          <line>42</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

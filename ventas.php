@@ -39,56 +39,57 @@ try {
 } catch (PDOException $e) {
     echo "ERROR: " . $e->getMessage();
 }
-if (isset($_COOKIE['contador'])){
-    echo "<h2 align='center'>Cesta de la compra</h2>";
-    echo "<div align='center'>";
-    for ($i=0;$i<$_COOKIE['contador'];$i++){
-        $nombre = 'nombre'.$i;
-        $precio = 'precio'.$i;
-        echo $_COOKIE[$nombre].' '.$_COOKIE[$precio];
-        echo "<br>";
-    }
-    if (isset($_GET['nombre'])) {
-        setcookie('contador', $_COOKIE['contador'] + 1);
-        $nombre = 'nombre';
-        $nombre .= $_COOKIE['contador'];
-        $precio = 'precio';
-        $precio .= $_COOKIE['contador'];
-        $nombreProducto = $_GET['nombre'];
-        $precioProducto = $_GET['precio'];
-        setcookie($nombre,$nombreProducto);
-        setcookie($precio,$precioProducto);
-        echo $_GET['nombre'].' '.$_GET['precio'];
-        echo "<br>";
-    }
-    echo "</div>";
-    if (isset($_COOKIE['total'])) {
-        $inicial = $_COOKIE['total'];
-        if (isset($_GET['nombre'])) {
-            $total = $inicial + $_GET['precio'];
-            setcookie('total', $total);
-            echo "<br>";
-            echo "<div align='center'>";
-            echo "El precio total es: " . $total;
-            echo "</div>";
-            echo "<br><br>";
-        }else{
-            echo "<br>";
-            echo "<div align='center'>";
-            echo "El precio total es: " . $inicial;
-            echo "</div>";
-            echo "<br><br>";
-        }
-    }else{
-        setcookie('total',$_GET['precio']);
-    }
-}else{
-    setcookie('contador',0);
-}
 if (isset($_POST['cliente'])){
     $nCliente = $_POST['cliente'][0];
-    setcookie('cliente',$nCliente);
+    setcookie('cliente', $nCliente);
     header('Location: ticket.php');
+}else {
+    if (isset($_COOKIE['contador'])) {
+        echo "<h2 align='center'>Cesta de la compra</h2>";
+        echo "<div align='center'>";
+        for ($i = 0; $i < $_COOKIE['contador']; $i++) {
+            $nombre = 'nombre' . $i;
+            $precio = 'precio' . $i;
+            echo $_COOKIE[$nombre] . ' ' . $_COOKIE[$precio];
+            echo "<br>";
+        }
+        if (isset($_GET['nombre'])) {
+            setcookie('contador', $_COOKIE['contador'] + 1);
+            $nombre = 'nombre';
+            $nombre .= $_COOKIE['contador'];
+            $precio = 'precio';
+            $precio .= $_COOKIE['contador'];
+            $nombreProducto = $_GET['nombre'];
+            $precioProducto = $_GET['precio'];
+            setcookie($nombre, $nombreProducto);
+            setcookie($precio, $precioProducto);
+            echo $_GET['nombre'] . ' ' . $_GET['precio'];
+            echo "<br>";
+        }
+        echo "</div>";
+        if (isset($_COOKIE['total'])) {
+            $inicial = $_COOKIE['total'];
+            if (isset($_GET['nombre'])) {
+                $total = $inicial + $_GET['precio'];
+                setcookie('total', $total);
+                echo "<br>";
+                echo "<div align='center'>";
+                echo "El precio total es: " . $total;
+                echo "</div>";
+                echo "<br><br>";
+            } else {
+                echo "<br>";
+                echo "<div align='center'>";
+                echo "El precio total es: " . $inicial;
+                echo "</div>";
+                echo "<br><br>";
+            }
+        } else {
+            setcookie('total', $_GET['precio']);
+        }
+    } else {
+        setcookie('contador', 0);
+    }
 }
 ?>
         <div align="center">
