@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd7d04ff-3c66-4dd6-914d-31d9909a0619" name="Default Changelist" comment="" />
+    <list default="true" id="dd7d04ff-3c66-4dd6-914d-31d9909a0619" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/vistaCategorias.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistaCategorias.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +12,9 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpServers">
     <servers>
       <server host="localhost" id="bc209cd0-f705-4820-806e-91d4d6dbb6fc" name="Server" />
@@ -17,6 +22,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHPXampp" />
   <component name="ProjectId" id="1nhatp7ScssQmIcJl2efnlYXWsM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,26 +54,27 @@
       <option name="presentableId" value="Default" />
       <updated>1611844999508</updated>
       <workItem from="1611845001488" duration="13360000" />
-      <workItem from="1611905669803" duration="28317000" />
+      <workItem from="1611905669803" duration="28831000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/editarEmpleados.php</url>
-          <line>34</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/editarEmpleados.php</url>
-          <line>41</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/editarEmpleados.php</url>
           <line>57</line>

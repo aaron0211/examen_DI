@@ -14,7 +14,7 @@ try {
 
     $resultado = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    echo "<p><b>Ver todos</b> | <a href='viewpaginated.php?page=1'>Ver paginados</a></p>";
+    echo "<p><b>Ver todos</b> | <a href='vistapaginadaCategorias.php?page=1'>Ver paginados</a></p>";
     echo "<table border='1' cellpaddiing='10'>";
     echo "<tr> <th>ID</th> <th>Descripción</th>";
 
